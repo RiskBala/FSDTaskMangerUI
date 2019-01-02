@@ -1,0 +1,9 @@
+dockerx run -p 8090:8085 bala-task-manager:latest
+
+dockerx exec -it <container id> sh
+
+Service: curl http://localhost:7070/
+
+UI Home page: curl http://localhost:4200/addtask
+
+
