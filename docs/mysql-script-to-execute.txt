@@ -15,4 +15,10 @@ CREATE TABLE tasks (
 	CONSTRAINT FK_TASKS FOREIGN KEY (parent_id) REFERENCES tasks (task_id)
 );
 
+CREATE TABLE `parent_tasks` (
+  `parent_task_id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `parent_task_name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`parent_task_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
 
